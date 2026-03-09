@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ボルメックス (Volmex Co., Ltd.)</title>
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Arial', '"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', 'Meiryo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-[#f0f3f6] text-[#4a5568] font-sans tracking-wide selection:bg-[#cbd5e1] selection:text-[#1e293b]">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-500 py-6 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold tracking-wider text-[#1e2e3e]">VOLMEX</span>
+                <span class="text-[10px] text-[#788b9c] tracking-widest uppercase">Co., Ltd.</span>
+            </div>
+            
+            <nav class="hidden md:flex gap-8 text-[13px] font-medium tracking-widest text-[#5a6a7a]">
+                <a href="#about" class="hover:text-[#2c3e50] transition-colors relative group">
+                    ABOUT
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2c3e50] transition-all group-hover:w-full opacity-50"></span>
+                </a>
+                <a href="#business" class="hover:text-[#2c3e50] transition-colors relative group">
+                    BUSINESS
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2c3e50] transition-all group-hover:w-full opacity-50"></span>
+                </a>
+                <a href="#strengths" class="hover:text-[#2c3e50] transition-colors relative group">
+                    STRENGTHS
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2c3e50] transition-all group-hover:w-full opacity-50"></span>
+                </a>
+                <a href="#synergy" class="hover:text-[#2c3e50] transition-colors relative group">
+                    SYNERGY
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2c3e50] transition-all group-hover:w-full opacity-50"></span>
+                </a>
+                <a href="#company" class="hover:text-[#2c3e50] transition-colors relative group">
+                    COMPANY
+                    <span class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#2c3e50] transition-all group-hover:w-full opacity-50"></span>
+                </a>
+            </nav>
+            
+            <div class="hidden md:block">
+                <button class="text-[12px] font-bold tracking-widest px-6 py-3 bg-[#2c3e50] text-white rounded-full shadow-[4px_4px_10px_rgba(170,185,200,0.5)] hover:bg-[#1a2530] transition-colors">
+                    CONTACT
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-[#f0f3f6] shadow-[3px_3px_8px_rgba(170,185,200,0.4),-3px_-3px_8px_rgba(255,255,255,0.9)]">
+                <i id="mobile-menu-icon" data-lucide="menu" class="w-5 h-5 text-[#2c3e50]"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+            <div class="w-full lg:w-1/2">
+                <span class="inline-block py-1.5 px-4 mb-6 text-xs font-bold tracking-widest text-[#5c7285] bg-[#e4e9ef] rounded-full shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.7)]">
+                    COMPREHENSIVE BEAUTY COMPANY
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold leading-[1.3] text-[#1c2834] mb-8">
+                    美容業界の現場から、<br />
+                    <span class="text-[#3b5266]">商品と仕組みをつくる。</span>
+                </h1>
+                <p class="text-[15px] md:text-base leading-relaxed text-[#5a6a7a] mb-10 max-w-lg">
+                    株式会社ボルメックスは、ヘアケア商品の開発・製造、サロン運営、フランチャイズ支援を通じて、美容業界に新しい価値を提供する総合美容企業です。
+                </p>
+                <a href="#business" class="inline-flex items-center justify-center gap-2 bg-[#f0f3f6] rounded-full px-8 py-4 shadow-[6px_6px_12px_rgba(170,185,200,0.4),-6px_-6px_12px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_5px_rgba(170,185,200,0.3),inset_-2px_-2px_5px_rgba(255,255,255,0.9)] active:shadow-[inset_4px_4px_8px_rgba(170,185,200,0.4),inset_-4px_-4px_8px_rgba(255,255,255,0.9)] transition-all duration-300 font-medium text-[#2c3e50] border border-white/30">
+                    事業内容を見る <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+            
+            <div class="w-full lg:w-1/2 relative">
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-3">
+                    <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-[#e2e8f0] to-[#f1f5f9] overflow-hidden relative flex items-center justify-center shadow-[inset_4px_4px_10px_rgba(170,185,200,0.2)]">
+                        <!-- Image Placeholder -->
+                        <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==')]"></div>
+                        <div class="text-center z-10">
+                            <i data-lucide="building-2" class="w-16 h-16 text-[#94a3b8] mx-auto mb-4 opacity-50"></i>
+                            <p class="text-[#64748b] text-sm tracking-widest">[ 店舗風景・商材の美しい写真 ]</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative floating elements -->
+                <div class="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-[#f0f3f6] shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] z-0 hidden md:block"></div>
+                <div class="absolute -top-6 -right-6 w-16 h-16 rounded-full bg-[#f0f3f6] shadow-[6px_6px_12px_rgba(170,185,200,0.4),-6px_-6px_12px_rgba(255,255,255,0.9)] z-0 hidden md:block"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">ABOUT VOLMEX</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-[#1c2834] mb-10">現場を知るからこそ、<br class="md:hidden"/>商品も仕組みもつくれる。</h3>
+            <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-8 md:p-12 text-left md:text-center">
+                <p class="text-[15px] leading-relaxed text-[#4a5568] mb-6">
+                    株式会社ボルメックスは、美容商材の開発・製造・卸事業と、サロン運営・フランチャイズ支援を一体で行う総合美容企業です。
+                </p>
+                <p class="text-[15px] leading-relaxed text-[#4a5568]">
+                    現場で本当に必要とされる商品を生み出し、その価値を実際の店舗運営の中で磨き上げ、再び市場へ還元する。<br class="hidden md:block"/>
+                    机上の空論ではなく、常に現場起点で美容業界の課題解決に取り組んでいます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section id="business" class="py-24 px-6 bg-[#e8ecef]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">BUSINESS</h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-[#1c2834]">事業内容</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Business 1 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-8 group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#e4e9ef] shadow-[inset_3px_3px_6px_rgba(170,185,200,0.4),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] flex items-center justify-center mb-6 text-[#4a627a]">
+                        <i data-lucide="leaf" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#1c2834] mb-3">美容商材の開発・製造・卸</h4>
+                    <p class="text-sm leading-relaxed text-[#5a6a7a]">現場で求められる品質を追求し、ヘアケア商品をはじめとした高品質な美容商材の企画・開発・製造・卸を行っています。</p>
+                </div>
+                <!-- Business 2 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-8 group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#e4e9ef] shadow-[inset_3px_3px_6px_rgba(170,185,200,0.4),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] flex items-center justify-center mb-6 text-[#4a627a]">
+                        <i data-lucide="store" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#1c2834] mb-3">店舗・サロン運営</h4>
+                    <p class="text-sm leading-relaxed text-[#5a6a7a]">白髪染め専門店「カラーのちから」をはじめ、美容・リラクゼーション・飲食など多角的な店舗運営で現場のノウハウを蓄積しています。</p>
+                </div>
+                <!-- Business 3 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-8 group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#e4e9ef] shadow-[inset_3px_3px_6px_rgba(170,185,200,0.4),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] flex items-center justify-center mb-6 text-[#4a627a]">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#1c2834] mb-3">FC・開業支援</h4>
+                    <p class="text-sm leading-relaxed text-[#5a6a7a]">「カラーのちから」のブランド展開を通じ、加盟店の開業から運営まで、実践的なノウハウによる手厚いサポートを提供します。</p>
+                </div>
+                <!-- Business 4 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-8 group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-[#e4e9ef] shadow-[inset_3px_3px_6px_rgba(170,185,200,0.4),inset_-3px_-3px_6px_rgba(255,255,255,0.8)] flex items-center justify-center mb-6 text-[#4a627a]">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#1c2834] mb-3">就労支援事業</h4>
+                    <p class="text-sm leading-relaxed text-[#5a6a7a]">多様な人材が自分らしく働ける社会を目指し、美容業界の枠を超えた就労支援事業にも積極的に取り組んでいます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">STRENGTHS</h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-[#1c2834]">ボルメックスの強み</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Strength 1 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 text-center flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-[#f0f3f6] shadow-[4px_4px_8px_rgba(170,185,200,0.5),-4px_-4px_8px_rgba(255,255,255,0.9)] flex items-center justify-center mb-4">
+                        <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-[#6b8299]"></i>
+                    </div>
+                    <h4 class="text-[15px] font-bold text-[#2c3e50]">現場起点の商品開発</h4>
+                </div>
+                <!-- Strength 2 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 text-center flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-[#f0f3f6] shadow-[4px_4px_8px_rgba(170,185,200,0.5),-4px_-4px_8px_rgba(255,255,255,0.9)] flex items-center justify-center mb-4">
+                        <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-[#6b8299]"></i>
+                    </div>
+                    <h4 class="text-[15px] font-bold text-[#2c3e50]">開発から運営までの一貫体制</h4>
+                </div>
+                <!-- Strength 3 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 text-center flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-[#f0f3f6] shadow-[4px_4px_8px_rgba(170,185,200,0.5),-4px_-4px_8px_rgba(255,255,255,0.9)] flex items-center justify-center mb-4">
+                        <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-[#6b8299]"></i>
+                    </div>
+                    <h4 class="text-[15px] font-bold text-[#2c3e50]">継続しやすいビジネスモデル</h4>
+                </div>
+                <!-- Strength 4 -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 text-center flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-[#f0f3f6] shadow-[4px_4px_8px_rgba(170,185,200,0.5),-4px_-4px_8px_rgba(255,255,255,0.9)] flex items-center justify-center mb-4">
+                        <i data-lucide="check-circle-2" class="w-[18px] h-[18px] text-[#6b8299]"></i>
+                    </div>
+                    <h4 class="text-[15px] font-bold text-[#2c3e50]">人が活躍できる環境づくり</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synergy Section -->
+    <section id="synergy" class="py-24 px-6 bg-[#e8ecef]/50">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 text-center">
+                <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">SYNERGY</h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-[#1c2834]">事業のつながり</h3>
+                <p class="mt-4 text-[14px] text-[#5a6a7a]">各事業が独立するのではなく、一つのエコシステムとして連携しています。</p>
+            </div>
+
+            <div class="flex flex-col items-center relative pt-8">
+                
+                <!-- 1. 株式会社ボルメックス -->
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 w-full max-w-lg p-5 md:p-6 text-center z-10 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-[#2c3e50]"></div>
+                    <span class="text-xs text-[#788b9c] font-bold block mb-1">本部機能・製造卸</span>
+                    <h4 class="text-xl md:text-2xl font-bold text-[#1c2834] mb-4">株式会社ボルメックス</h4>
+                    <div class="bg-[#f0f3f6] rounded-2xl shadow-[inset_4px_4px_8px_rgba(170,185,200,0.3),inset_-4px_-4px_8px_rgba(255,255,255,0.8)] p-3 text-sm text-[#5a6a7a] flex justify-around">
+                        <span>美容商材開発</span>
+                        <span class="w-[1px] bg-[#d0dbe5]"></span>
+                        <span>FC本部機能</span>
+                    </div>
+                </div>
+
+                <!-- ボルメックスからの縦線 -->
+                <div class="h-10 w-[2px] bg-[#b0c0d0]"></div>
+
+                <!-- 2. 分岐コンテナ -->
+                <div class="w-full max-w-2xl flex relative">
+                    <!-- 横線 -->
+                    <div class="absolute top-0 left-[25%] right-[25%] h-[2px] bg-[#b0c0d0]"></div>
+                    
+                    <!-- 左：店舗運営事業部 -->
+                    <div class="w-1/2 flex flex-col items-center px-2 md:px-6">
+                        <div class="h-6 w-[2px] bg-[#b0c0d0]"></div>
+                        <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 w-full p-4 md:p-6 text-center h-full flex flex-col items-center justify-center">
+                            <span class="text-xs text-[#788b9c] font-bold block mb-1">直営店舗</span>
+                            <h4 class="text-[14px] md:text-[16px] font-bold text-[#1c2834] mb-2">店舗運営事業部</h4>
+                            <p class="text-[11px] md:text-[12px] text-[#5a6a7a] leading-tight">ノウハウの蓄積・実証</p>
+                        </div>
+                    </div>
+
+                    <!-- 右：カラーのちから等 -->
+                    <div class="w-1/2 flex flex-col items-center px-2 md:px-6 relative">
+                        <div class="h-6 w-[2px] bg-[#b0c0d0]"></div>
+                        
+                        <!-- グラシオート -->
+                        <div class="absolute -top-12 md:-top-16 right-0 md:-right-4 flex flex-col items-center z-20">
+                            <div class="bg-[#f0f3f6] rounded-2xl p-2 md:p-3 shadow-[4px_4px_8px_rgba(170,185,200,0.4),-4px_-4px_8px_rgba(255,255,255,0.9)] border border-white/50 text-center">
+                                <span class="text-[9px] md:text-[10px] text-[#788b9c] font-bold block mb-0.5">関連会社</span>
+                                <h4 class="text-[11px] md:text-[13px] font-bold text-[#1c2834]">株式会社graciauto</h4>
+                            </div>
+                            <div class="h-4 md:h-6 w-[2px] bg-[#b0c0d0] mt-1"></div>
+                        </div>
+
+                        <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 w-full p-4 md:p-6 text-center h-full flex flex-col items-center justify-center z-10 relative border-t-2 border-[#2c3e50]/20">
+                            <span class="text-xs text-[#788b9c] font-bold block mb-1">加盟店舗</span>
+                            <h4 class="text-[14px] md:text-[16px] font-bold text-[#1c2834] mb-2">カラーのちから等</h4>
+                            <p class="text-[11px] md:text-[12px] text-[#5a6a7a] leading-tight">FC展開・開業支援</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 就労支援事業 -->
+                <div class="h-12 w-[2px] bg-[#b0c0d0] z-0 relative -mt-4 md:mt-0"></div>
+                
+                <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 w-full max-w-sm p-4 md:p-6 text-center z-10 relative">
+                    <h4 class="text-[15px] md:text-[16px] font-bold text-[#2c3e50] mb-1">就労支援事業</h4>
+                    <p class="text-[11px] md:text-[12px] text-[#5a6a7a] mt-1">地域社会との連携・多様な働き方の創出</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social & Recruit -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#e4e9ef] to-transparent opacity-30 z-0"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">RECRUIT & SOCIAL</h2>
+                    <h3 class="text-2xl md:text-3xl font-bold text-[#1c2834] mb-6">美容業界で、<br/>ずっと活躍できる場所を。</h3>
+                    <p class="text-[14px] leading-relaxed text-[#5a6a7a] mb-8">
+                        美容師の労働環境改善や、休眠美容師の復職支援に注力しています。
+                        また、就労支援事業を通じて、障害の有無に関わらず多様な人材が自分らしく働ける環境を提供し、地域社会へ貢献する誠実な企業活動を続けています。
+                    </p>
+                    <div class="flex gap-4">
+                        <button class="flex items-center justify-center gap-2 bg-[#f0f3f6] rounded-full px-6 py-3 shadow-[6px_6px_12px_rgba(170,185,200,0.4),-6px_-6px_12px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_5px_rgba(170,185,200,0.3),inset_-2px_-2px_5px_rgba(255,255,255,0.9)] active:shadow-[inset_4px_4px_8px_rgba(170,185,200,0.4),inset_-4px_-4px_8px_rgba(255,255,255,0.9)] transition-all duration-300 font-medium text-[#2c3e50] border border-white/30 text-sm">
+                            採用情報を見る
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 aspect-square flex flex-col justify-center items-center text-center">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-[#8da09e] mb-3"></i>
+                        <span class="text-sm font-bold text-[#2c3e50]">労働環境の改善</span>
+                    </div>
+                    <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 aspect-square flex flex-col justify-center items-center text-center mt-8">
+                        <i data-lucide="heart-handshake" class="w-8 h-8 text-[#8da09e] mb-3"></i>
+                        <span class="text-sm font-bold text-[#2c3e50]">休眠美容師支援</span>
+                    </div>
+                    <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 aspect-square flex flex-col justify-center items-center text-center -mt-8">
+                        <i data-lucide="building-2" class="w-8 h-8 text-[#8da09e] mb-3"></i>
+                        <span class="text-sm font-bold text-[#2c3e50]">多様な働き方</span>
+                    </div>
+                    <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-6 aspect-square flex flex-col justify-center items-center text-center">
+                        <i data-lucide="leaf" class="w-8 h-8 text-[#8da09e] mb-3"></i>
+                        <span class="text-sm font-bold text-[#2c3e50]">地域社会への貢献</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section id="company" class="py-24 px-6 bg-[#e8ecef]/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="text-[11px] font-bold tracking-[0.3em] text-[#788b9c] mb-3">COMPANY</h2>
+                <h3 class="text-2xl font-bold text-[#1c2834]">会社概要</h3>
+            </div>
+
+            <div class="bg-[#f0f3f6] rounded-3xl shadow-[8px_8px_16px_rgba(170,185,200,0.4),-8px_-8px_16px_rgba(255,255,255,0.9)] border border-white/50 p-2 md:p-4">
+                <div class="bg-[#f0f3f6] rounded-2xl p-6 md:p-10">
+                    <dl class="space-y-6">
+                        <!-- Row 1 -->
+                        <div class="flex flex-col md:flex-row md:items-start py-4">
+                            <dt class="w-full md:w-48 text-[13px] font-bold tracking-wider text-[#788b9c] mb-2 md:mb-0 pt-1">会社名</dt>
+                            <dd class="w-full flex-1 text-[15px] text-[#2c3e50] leading-relaxed">株式会社ボルメックス（Volmex Co., Ltd.）</dd>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="flex flex-col md:flex-row md:items-start py-4 border-t border-[#d8e0e8]">
+                            <dt class="w-full md:w-48 text-[13px] font-bold tracking-wider text-[#788b9c] mb-2 md:mb-0 pt-1">代表者</dt>
+                            <dd class="w-full flex-1 text-[15px] text-[#2c3e50] leading-relaxed">平岩 浩之</dd>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="flex flex-col md:flex-row md:items-start py-4 border-t border-[#d8e0e8]">
+                            <dt class="w-full md:w-48 text-[13px] font-bold tracking-wider text-[#788b9c] mb-2 md:mb-0 pt-1">設立</dt>
+                            <dd class="w-full flex-1 text-[15px] text-[#2c3e50] leading-relaxed">2022年7月</dd>
+                        </div>
+                        <!-- Row 4 -->
+                        <div class="flex flex-col md:flex-row md:items-start py-4 border-t border-[#d8e0e8]">
+                            <dt class="w-full md:w-48 text-[13px] font-bold tracking-wider text-[#788b9c] mb-2 md:mb-0 pt-1">所在地</dt>
+                            <dd class="w-full flex-1 text-[15px] text-[#2c3e50] leading-relaxed">〒460-0007 愛知県名古屋市中区新栄2丁目35番15号</dd>
+                        </div>
+                        <!-- Row 5 -->
+                        <div class="flex flex-col md:flex-row md:items-start py-4 border-t border-[#d8e0e8]">
+                            <dt class="w-full md:w-48 text-[13px] font-bold tracking-wider text-[#788b9c] mb-2 md:mb-0 pt-1">事業内容</dt>
+                            <dd class="w-full flex-1 text-[15px] text-[#2c3e50] leading-relaxed">美容商材製造・卸、店舗運営、フランチャイズサポート、就労支援など</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-[#1c2834] mb-4">お問い合わせ</h2>
+            <p class="text-[15px] text-[#5a6a7a] mb-12">
+                事業に関するご相談、FC加盟、採用についてなど、お気軽にお問い合わせください。
+            </p>
+
+            <div class="flex flex-col gap-4">
+                <button class="w-full flex items-center justify-between p-5 bg-[#f0f3f6] rounded-2xl shadow-[5px_5px_10px_rgba(170,185,200,0.4),-5px_-5px_10px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_6px_rgba(170,185,200,0.3),inset_-2px_-2px_6px_rgba(255,255,255,0.9)] transition-all duration-300 text-left text-[#344454] font-medium group border border-white/40">
+                    <span class="text-[15px] sm:text-base">美容商材の卸・お取引について</span>
+                    <div class="w-8 h-8 rounded-full bg-[#e8ecef] shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.9)] flex items-center justify-center group-hover:bg-[#2c3e50] transition-colors duration-300">
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-[#788b9c] group-hover:text-white transition-colors"></i>
+                    </div>
+                </button>
+                <button class="w-full flex items-center justify-between p-5 bg-[#f0f3f6] rounded-2xl shadow-[5px_5px_10px_rgba(170,185,200,0.4),-5px_-5px_10px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_6px_rgba(170,185,200,0.3),inset_-2px_-2px_6px_rgba(255,255,255,0.9)] transition-all duration-300 text-left text-[#344454] font-medium group border border-white/40">
+                    <span class="text-[15px] sm:text-base">カラーのちからFC加盟・開業について</span>
+                    <div class="w-8 h-8 rounded-full bg-[#e8ecef] shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.9)] flex items-center justify-center group-hover:bg-[#2c3e50] transition-colors duration-300">
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-[#788b9c] group-hover:text-white transition-colors"></i>
+                    </div>
+                </button>
+                <button class="w-full flex items-center justify-between p-5 bg-[#f0f3f6] rounded-2xl shadow-[5px_5px_10px_rgba(170,185,200,0.4),-5px_-5px_10px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_6px_rgba(170,185,200,0.3),inset_-2px_-2px_6px_rgba(255,255,255,0.9)] transition-all duration-300 text-left text-[#344454] font-medium group border border-white/40">
+                    <span class="text-[15px] sm:text-base">採用について</span>
+                    <div class="w-8 h-8 rounded-full bg-[#e8ecef] shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.9)] flex items-center justify-center group-hover:bg-[#2c3e50] transition-colors duration-300">
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-[#788b9c] group-hover:text-white transition-colors"></i>
+                    </div>
+                </button>
+                <button class="w-full flex items-center justify-between p-5 bg-[#f0f3f6] rounded-2xl shadow-[5px_5px_10px_rgba(170,185,200,0.4),-5px_-5px_10px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_6px_rgba(170,185,200,0.3),inset_-2px_-2px_6px_rgba(255,255,255,0.9)] transition-all duration-300 text-left text-[#344454] font-medium group border border-white/40">
+                    <span class="text-[15px] sm:text-base">就労支援について</span>
+                    <div class="w-8 h-8 rounded-full bg-[#e8ecef] shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.9)] flex items-center justify-center group-hover:bg-[#2c3e50] transition-colors duration-300">
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-[#788b9c] group-hover:text-white transition-colors"></i>
+                    </div>
+                </button>
+                <button class="w-full flex items-center justify-between p-5 bg-[#f0f3f6] rounded-2xl shadow-[5px_5px_10px_rgba(170,185,200,0.4),-5px_-5px_10px_rgba(255,255,255,0.9)] hover:shadow-[inset_2px_2px_6px_rgba(170,185,200,0.3),inset_-2px_-2px_6px_rgba(255,255,255,0.9)] transition-all duration-300 text-left text-[#344454] font-medium group border border-white/40">
+                    <span class="text-[15px] sm:text-base">その他のお問い合わせ</span>
+                    <div class="w-8 h-8 rounded-full bg-[#e8ecef] shadow-[inset_2px_2px_4px_rgba(170,185,200,0.3),inset_-2px_-2px_4px_rgba(255,255,255,0.9)] flex items-center justify-center group-hover:bg-[#2c3e50] transition-colors duration-300">
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-[#788b9c] group-hover:text-white transition-colors"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#e4e9ef] py-12 px-6 border-t border-white/50">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="text-xl font-bold tracking-wider text-[#1e2e3e]">VOLMEX</span>
+                <span class="text-[10px] text-[#788b9c] tracking-widest mt-1">株式会社ボルメックス</span>
+            </div>
+            <div class="text-[11px] text-[#788b9c] tracking-widest">
+                &copy; <span id="current-year"></span> Volmex Co., Ltd. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('py-3', 'bg-[#f0f3f6]/80', 'backdrop-blur-md', 'shadow-[0_4px_20px_rgba(170,185,200,0.2)]');
+                header.classList.remove('py-6', 'bg-transparent');
+            } else {
+                header.classList.remove('py-3', 'bg-[#f0f3f6]/80', 'backdrop-blur-md', 'shadow-[0_4px_20px_rgba(170,185,200,0.2)]');
+                header.classList.add('py-6', 'bg-transparent');
+            }
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        let isMobileMenuOpen = false;
+
+        mobileMenuBtn.addEventListener('click', () => {
+            isMobileMenuOpen = !isMobileMenuOpen;
+            if (isMobileMenuOpen) {
+                mobileMenuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                mobileMenuIcon.setAttribute('data-lucide', 'menu');
+            }
+            // Re-initialize the updated icon
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
